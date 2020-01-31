@@ -20,14 +20,14 @@ public class Client {
         ){
             System.out.println("ConnectedToServer");
             String request = "Kiev";
-            System.out.println("Request: "+ request);
+            System.out.println("Request sent: "+ request);
 
             writer.write(request);
             writer.newLine();
             writer.flush();
 
             String response = reader.readLine();
-            System.out.println("Response: "+ response);
+            System.out.println("Response received: "+ response);
         } catch (IOException e) {
             e.printStackTrace();
         }

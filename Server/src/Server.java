@@ -28,9 +28,9 @@ public class Server {
                                                 socket.getInputStream()));
                         ){
                     String request = reader.readLine();
-                    System.out.println("Request: " + request);
+                    System.out.println("Request received: " + request);
                     String response = (int)(Math.random() * 30 - 10) + "";
-                    System.out.println("Response: " + response);
+                    System.out.println("Response sent: " + response);
                     writer.write(response);
                     writer.newLine();
                     writer.flush();
