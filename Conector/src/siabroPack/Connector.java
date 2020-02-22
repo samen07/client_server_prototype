@@ -37,7 +37,7 @@ public class Connector implements Closeable {
 
     public void writeLine(String message) {
         try {
-            writer.newLine();
+            writer.write(message);
             writer.newLine();
             writer.flush();
         } catch (IOException e){
@@ -45,7 +45,7 @@ public class Connector implements Closeable {
         }
     }
 
-    public String  readLine(){
+    public String readLine(){
         try {
             return reader.readLine();
         } catch (IOException e) {
@@ -54,15 +54,11 @@ public class Connector implements Closeable {
     }
 
     private BufferedReader createReader() throws IOException {
-            return new BufferedReader(
-                    new InputStreamReader(
-                            socket.getInputStream()));
+            return new BufferedReader(new InputStreamReader(socket.getInputStream()));
     }
 
     private BufferedWriter creareWriter() throws IOException {
-            return new BufferedWriter(
-                    new OutputStreamWriter(
-                            socket.getOutputStream()));
+            return new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
     }
 
     @Override
