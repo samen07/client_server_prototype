@@ -1,13 +1,7 @@
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 import java.net.ServerSocket;
-import java.net.Socket;
+
+import siabroPack.Connector;
 
 public class Server {
     public static void main (String[] args) throws IOException {
@@ -15,31 +9,21 @@ public class Server {
         {
             System.out.println("SRVR_started.");
 
-            while (true)
-                try (
-                        Socket socket = server.accept();
-                        BufferedWriter writer =
-                                new BufferedWriter(
-                                        new OutputStreamWriter(
-                                                socket.getOutputStream()));
-                        BufferedReader reader =
-                                new BufferedReader(
-                                        new InputStreamReader(
-                                                socket.getInputStream()));
-                        ){
-                    String request = reader.readLine();
-                    System.out.println("Request received: " + request);
-                    String response = (int)(Math.random() * 30 - 10) + "";
-                    System.out.println("Response sent: " + response);
-                    writer.write(response);
-                    writer.newLine();
-                    writer.flush();
-                } catch (IOException e){
-                    throw new RuntimeException(e);
+            while (true) {
+
+                Connector connector = new Connector(server);
+                    new Thread(() -> {
+                        String request = connector.readLine();      System.out.println("Request received: " + request);
+                        String response = (int)(Math.random() * 30 - 10) + "";
+                        try {Thread.sleep(4000);} catch (InterruptedException e) {}
+                        connector.writeLine(response);              System.out.println("Response sent: " + response);
+                        try {connector.close(); } catch (IOException e) { }
+                    }).start();
+
                 }
+
         } catch (IOException e){
             throw new RuntimeException(e);
         }
     }
-
 }
