@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a884aea3-3cc2-418a-98bb-9aca1d561260" name="Default Changelist" comment="" />
+    <list default="true" id="a884aea3-3cc2-418a-98bb-9aca1d561260" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/mysql-connector-java-8.0.19.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/Server.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,11 +33,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Server" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Server" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Client">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -128,30 +140,34 @@
       <screen x="37" y="23" width="1403" height="877" />
     </state>
     <state x="840" y="327" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/37.23.1403.877@37.23.1403.877" timestamp="1582364655105" />
-    <state width="1002" height="283" key="GridCell.Tab.0.bottom" timestamp="1582368503106">
+    <state width="1402" height="353" key="GridCell.Tab.0.bottom" timestamp="1587830690003">
       <screen x="38" y="23" width="1402" height="877" />
     </state>
     <state width="882" height="184" key="GridCell.Tab.0.bottom/37.23.1403.877/1440.-277.1920.1177@37.23.1403.877" timestamp="1581319128287" />
-    <state width="1002" height="302" key="GridCell.Tab.0.bottom/37.23.1403.877@37.23.1403.877" timestamp="1582366591931" />
-    <state width="1002" height="283" key="GridCell.Tab.0.bottom/38.23.1402.877@38.23.1402.877" timestamp="1582368503106" />
-    <state width="1002" height="283" key="GridCell.Tab.0.center" timestamp="1582368503105">
+    <state width="1403" height="169" key="GridCell.Tab.0.bottom/37.23.1403.877@37.23.1403.877" timestamp="1585927613938" />
+    <state width="1402" height="353" key="GridCell.Tab.0.bottom/38.23.1402.877@38.23.1402.877" timestamp="1587830690003" />
+    <state width="1880" height="169" key="GridCell.Tab.0.bottom/40.23.1880.1057@40.23.1880.1057" timestamp="1585931164997" />
+    <state width="1402" height="353" key="GridCell.Tab.0.center" timestamp="1587830690003">
       <screen x="38" y="23" width="1402" height="877" />
     </state>
     <state width="882" height="184" key="GridCell.Tab.0.center/37.23.1403.877/1440.-277.1920.1177@37.23.1403.877" timestamp="1581319128286" />
-    <state width="1002" height="302" key="GridCell.Tab.0.center/37.23.1403.877@37.23.1403.877" timestamp="1582366591930" />
-    <state width="1002" height="283" key="GridCell.Tab.0.center/38.23.1402.877@38.23.1402.877" timestamp="1582368503105" />
-    <state width="1002" height="283" key="GridCell.Tab.0.left" timestamp="1582368503105">
+    <state width="1403" height="169" key="GridCell.Tab.0.center/37.23.1403.877@37.23.1403.877" timestamp="1585927613937" />
+    <state width="1402" height="353" key="GridCell.Tab.0.center/38.23.1402.877@38.23.1402.877" timestamp="1587830690003" />
+    <state width="1880" height="169" key="GridCell.Tab.0.center/40.23.1880.1057@40.23.1880.1057" timestamp="1585931164997" />
+    <state width="1402" height="353" key="GridCell.Tab.0.left" timestamp="1587830690002">
       <screen x="38" y="23" width="1402" height="877" />
     </state>
     <state width="882" height="184" key="GridCell.Tab.0.left/37.23.1403.877/1440.-277.1920.1177@37.23.1403.877" timestamp="1581319128286" />
-    <state width="1002" height="302" key="GridCell.Tab.0.left/37.23.1403.877@37.23.1403.877" timestamp="1582366591929" />
-    <state width="1002" height="283" key="GridCell.Tab.0.left/38.23.1402.877@38.23.1402.877" timestamp="1582368503105" />
-    <state width="1002" height="283" key="GridCell.Tab.0.right" timestamp="1582368503106">
+    <state width="1403" height="169" key="GridCell.Tab.0.left/37.23.1403.877@37.23.1403.877" timestamp="1585927613937" />
+    <state width="1402" height="353" key="GridCell.Tab.0.left/38.23.1402.877@38.23.1402.877" timestamp="1587830690002" />
+    <state width="1880" height="169" key="GridCell.Tab.0.left/40.23.1880.1057@40.23.1880.1057" timestamp="1585931164996" />
+    <state width="1402" height="353" key="GridCell.Tab.0.right" timestamp="1587830690003">
       <screen x="38" y="23" width="1402" height="877" />
     </state>
     <state width="882" height="184" key="GridCell.Tab.0.right/37.23.1403.877/1440.-277.1920.1177@37.23.1403.877" timestamp="1581319128287" />
-    <state width="1002" height="302" key="GridCell.Tab.0.right/37.23.1403.877@37.23.1403.877" timestamp="1582366591930" />
-    <state width="1002" height="283" key="GridCell.Tab.0.right/38.23.1402.877@38.23.1402.877" timestamp="1582368503106" />
+    <state width="1403" height="169" key="GridCell.Tab.0.right/37.23.1403.877@37.23.1403.877" timestamp="1585927613938" />
+    <state width="1402" height="353" key="GridCell.Tab.0.right/38.23.1402.877@38.23.1402.877" timestamp="1587830690003" />
+    <state width="1880" height="169" key="GridCell.Tab.0.right/40.23.1880.1057@40.23.1880.1057" timestamp="1585931164997" />
     <state width="1002" height="283" key="GridCell.Tab.1.bottom" timestamp="1582368503107">
       <screen x="38" y="23" width="1402" height="877" />
     </state>
@@ -172,6 +188,10 @@
     </state>
     <state width="1361" height="276" key="GridCell.Tab.1.right/37.23.1403.877@37.23.1403.877" timestamp="1580465882611" />
     <state width="1002" height="283" key="GridCell.Tab.1.right/38.23.1402.877@38.23.1402.877" timestamp="1582368503107" />
+    <state x="240" y="63" key="SettingsEditor" timestamp="1587828526552">
+      <screen x="38" y="23" width="1402" height="877" />
+    </state>
+    <state x="240" y="63" key="SettingsEditor/38.23.1402.877@38.23.1402.877" timestamp="1587828526552" />
     <state x="597" y="219" width="683" height="486" key="find.popup" timestamp="1582364425501">
       <screen x="37" y="23" width="1403" height="877" />
     </state>
@@ -180,5 +200,22 @@
       <screen x="38" y="23" width="1402" height="877" />
     </state>
     <state x="107" y="83" key="new project wizard/38.23.1402.877@38.23.1402.877" timestamp="1581246844406" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="client_server_prototype" type="b2602c69:ProjectViewProjectNode" />
+        <item name="Client" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="client_server_prototype" type="b2602c69:ProjectViewProjectNode" />
+        <item name="Conector" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="client_server_prototype" type="b2602c69:ProjectViewProjectNode" />
+        <item name="Server" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
   </component>
 </project>
