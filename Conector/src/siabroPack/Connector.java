@@ -7,9 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-/**
- * @author Created by antonsiabro on 09.02.2020.
- */
+
 public class Connector implements Closeable {
     private final Socket socket;
     private final BufferedReader reader;

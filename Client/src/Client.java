@@ -6,14 +6,11 @@ public class Client {
         try (Connector connector = new Connector("127.0.0.1", 8000)){
             System.out.println("ConnectedToServer");
 
-            //String request = "<?xml version = '1.0'?><class>" +
-            //        "<user email = 'asyabro@gmail.com'>" +
-            //        "<password>qwerty123</password>" +
-            //        "<action>roll_dice</action>" +
-            //        "</user></class>";
-            String request = "<?xml version = '1.0'?><class>" +
-                    "<customer id='100'><age>29</age><name>mkyong</name>" +
-                    "</customer></class>";
+
+            String request = "<?xml version = '1.0'?><user>" +
+                    "<action>'create'</action>" +
+                    "<email>'test@siabro.pp.ua'</email>" +
+                    "<password>'qwerty123'</password></user>";
 
             System.out.println("Request sent: " + request);
             connector.writeLine(request);
